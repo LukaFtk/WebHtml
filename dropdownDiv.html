@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElementSelectorDropdown</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      .banner{
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+      }
+      .bannerItems{
+        display: inline-block;
+        text-decoration: none;
+        width: 80px;
+        padding: 20px 50px 20px 50px;
+        position: relative;
+      }
+      .bannerItems:hover .dropdown{
+        display: inline-block;
+      }
+      .bannerItems:hover{
+        background-color:rgba(246, 236, 244, 0.949);
+        color: rgb(10, 8, 10);
+      }
+
+      .dropdown{
+        display: none;
+        position: absolute;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        top: 100%;
+        left: 0;
+        width: 160px;
+        background-color: #fff;
+        text-align: left;
+        padding: 10px 10px 10px 10px;
+      }
+      h1{
+        font-size:large;
+      }
+      p{
+        text-align: center;
+        padding: 10%;
+      }
+      p:hover{
+        background-color:rgba(246, 236, 244, 0.949);
+        color: rgb(10, 8, 10);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="banner">
+        <div class="bannerItems">
+            <h1>Home
+                <div class="dropdown">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                  </div>
+            </h1>
+            
+        </div>
+        <div class="bannerItems">
+            <h1>About Us</h1>
+        </div>
+        <div class="bannerItems">
+            <h1>Services</h1>
+        </div>
+        <div class="bannerItems">
+            <h1>Contact</h1>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>

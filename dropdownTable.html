@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElementSelectorDropdown</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+      table {
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border-collapse: collapse;
+      }
+
+      td {
+        width: 25%;
+        height: 44px;
+        text-decoration: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;    
+      }
+      td:hover {
+        background-color:rgba(254, 253, 254, 0.949);
+        color: rgb(10, 8, 10);
+      }
+      
+      .dropdown {
+        display: none;
+        position: absolute;
+        margin: 14px -1px;
+        width: 375px;
+      }
+      
+      td:hover .dropdown{
+        display: table;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Home
+            <table class="dropdown">
+                <tr>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                </tr>
+            </table>
+        </td>
+        <td>About Us</td>
+        <td>Services</td>
+        <td>Contact Us</td>
+      </tr>
+    </table>
+  </body>
+</html>
